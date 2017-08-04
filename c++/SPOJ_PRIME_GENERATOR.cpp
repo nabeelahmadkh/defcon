@@ -14,7 +14,6 @@
 
 using namespace std;  //for eliminating the need for writing the standard namespaces like std:cout etc. 
 
-#define sp system("pause")
 #define FOR(i,a,b) for(int i=a;i<=b;++i)
 #define FORD(i,a,b) for(int i=a;i>=b;--i)
 #define REP(i,n) FOR(i,0,(int)n-1)
@@ -23,7 +22,6 @@ using namespace std;  //for eliminating the need for writing the standard namesp
 #define SORT(a,n) sort(begin(a),begin(a)+n)
 #define REV(a,n) reverse(begin(a),begin(a)+n)
 #define ll long long
-#define MOD 1000000007
 #define gc getchar
 #define MAX 1000000000
 
