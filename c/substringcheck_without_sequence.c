@@ -1,6 +1,6 @@
 /*
  *			Program for finding wheather a given string is a substring of another string or not,,,wheather in sequence or  not
- *			Coded by Nbaeel Ahmad Khan
+ *			Coded by Nabeel Ahmad Khan
  *			Coded on 28/09/2014
  *			Algorithm used is Brute Force
  */

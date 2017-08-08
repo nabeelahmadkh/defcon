@@ -1,3 +1,10 @@
+/*
+ *          Program for saving data entered using hash function.
+ *          Coded by Nabeel Ahmad Khan
+ *          Coded on 28/09/2014
+ *          Algorithm used is Hashing Algo
+ */
+
 #include<stdio.h>
 #include<conio.h>
 

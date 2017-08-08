@@ -1,12 +1,10 @@
-/*to implement linked list and
-  to show add, delete , swap , display function in the linked list
-  coded by--->>>NABEEL AHMAD KHAN
-                11-PEB-146
-                GG-00-44
-                COMPUTER ENGG. DEPT.
-                FACULTY OF ENGG. & TECHNOLOGY
-                A.M.U. ,ALIGARH
-*/
+/*
+ *          Program  to show add, delete , swap , display function in the linked list.
+ *          Coded by Nabeel Ahmad Khan
+ *          Coded on 28/09/2014
+ *          
+ */
+
 
 #include<stdio.h>
 

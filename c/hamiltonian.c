@@ -4,6 +4,7 @@
 **** dated   --->30/10/2013 ****
 **** code this program again by recursion method ****
 */
+
 #include<stdio.h>
 struct node
 {

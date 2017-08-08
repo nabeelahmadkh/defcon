@@ -1,4 +1,4 @@
-# Python Program for printing the prime numbers upto n.
+# Python Program for printing the prime numbers upto n using Sieve of Erathosthenos.
 # Code started on 14/07/2017
 # Last Edit on 14/07/2017
 # Code by Nabeel Ahmad Khan 
@@ -18,7 +18,7 @@ def checkPrime(n):
     if check == 0:
         return n
 
-def sieveOfErathosthenos(x):
+def sieveOfErathosthenos(x):    #Sieve Function for calculating n prime numbers.
     array = [True] * (x+1)
     print array
     for j in range(2, int(math.sqrt(x))+1):
@@ -30,7 +30,7 @@ def sieveOfErathosthenos(x):
             print "the prime numbers are ",l
 
 
-    
+
 x = input("Enter the number upto which prime numbers are to be displayed")
 print x
 
