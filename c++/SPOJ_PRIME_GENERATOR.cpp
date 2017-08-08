@@ -1,5 +1,5 @@
-// Python Program for printing the prime numbers upto n.
-// Code started on 03/07/2017
+// C++ Program for printing the prime numbers upto n.
+// Code started on 03/07/2016
 // Last Edit on 04/07/2017
 // Code Written by Nabeel Ahmad Khan 
 
