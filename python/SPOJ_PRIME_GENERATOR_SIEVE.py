@@ -32,6 +32,7 @@ def sieveOfErathosthenos(x):    #Sieve Function for calculating n prime numbers.
 
 
 x = input("Enter the number upto which prime numbers are to be displayed")
+
 print x
 
 a=10
