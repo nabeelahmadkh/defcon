@@ -3,7 +3,7 @@
 # Fucntions for calculating the degree distribution, diameter, and the clustering coefficient.
 #
 # Libraries used are NetworkX, MatPlotlib, Numpy
-# Code by Nabeel Ahmad Khan
+# Code by Nabeel Ahmad Khan 
 # Written on 15th Sep, 2017
 # Last Edit on 20th Sep, 2017
 

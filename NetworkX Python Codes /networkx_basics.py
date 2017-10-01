@@ -1,7 +1,7 @@
 # python program for demostration of networkx
 # uncomment the lines for the demonstration of code  
 
-# importing different libraries to be used in the program 
+# importing different libraries to be used in the program  
 import networkx as nx
 import matplotlib.pyplot as plt
 import pandas as pd
