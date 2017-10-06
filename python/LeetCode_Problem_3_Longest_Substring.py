@@ -6,43 +6,53 @@
 
 
 class Solution(object):
-    def lengthOfLongestSubstring(self, s):
-    	tempList = []
-    	finalList = []
-    	stringLength = len(s) - 1
-    	j = 0
-    	subStringLength = 0
-    	for i in s:
-    		if j > 0:
-    			tempVariable = j - 1
-    			flag = 0
-    			while tempVariable >= 0:
-    				if i == tempList[tempVariable]:
-    					flag = 1
-    					break
-    				tempVariable -= 1
-    			if flag != 1:
-    				tempList.append(i)
-    				j += 1
-
-    			else:
-    				if len(tempList) >= subStringLength:
+	def lengthOfLongestSubstring(self, s):
+		tempList = []
+		finalList = []
+		oldi = 0
+		stringLength = len(s) - 1
+		j = 0
+		subStringLength = 0
+		for i in s:
+			if j > 0:
+				tempVariable = j - 1
+				flag = 0
+				while tempVariable >= 0:
+					print(" check ",tempList[tempVariable])
+					if i == tempList[tempVariable]:
+						flag = 1
+						break
+					tempVariable -= 1
+				print("tempLsit ",tempList)
+				if(flag != 1):
+					tempList.append(i)
+					j += 1
+					print("append ",i)
+				else:
+					print(" else ")
+					if len(tempList) >= subStringLength:
 						subStringLength = len(tempList)
 						finalList = tempList
-						tempList = [i]	#make templist empty 
+						if i>0:
+							tempList = [oldi]	#make templist empty 
+						else:
+							tempList = [i]
 						j = 1
 						continue
-
-
-    		else :
-    			tempList.append(i)
-    			j += 1
+					oldi = i
+				
+			else:
+				tempList.append(i)
+				j += 1
+				oldi = i 
 
 		if len(tempList) >= subStringLength:
 			subStringLength = len(tempList)
 			finalList = tempList
-    	print "the substring is ", finalList
-    	print "length ",len(finalList)
+		#print "the substring is ", finalList
+		#print "length ",len(finalList)
+
+		return len(finalList)
 
 
 variable = Solution()
@@ -51,4 +61,5 @@ string = str(raw_input())
 
 print "The string entered is ", string
 
-variable.lengthOfLongestSubstring(string)
+length = variable.lengthOfLongestSubstring(string)
+print("the length of the longest substring is ",length)
