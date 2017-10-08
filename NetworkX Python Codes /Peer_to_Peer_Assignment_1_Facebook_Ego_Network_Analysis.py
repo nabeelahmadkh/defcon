@@ -29,7 +29,7 @@ def closenss_centrality(G):
 G = nx.read_edgelist("/Users/nabeel/Desktop/Peer to Peer & Social Networks/Data Sets/facebook_combined.txt", create_using=nx.Graph(), nodetype=int)
 
 
-
+'''
 # Displaying the properties of the Facebook Ego Network 
 print(nx.info(G))
 degreeD = nx.degree_histogram(G)
@@ -58,7 +58,7 @@ nx.draw_networkx_edges(G,pos,alpha=0.1)
 
 nx.draw_networkx_labels(reducedgraph,pos,font_size=2,font_color='b')
 plt.show()
-
+'''
 
 
 # Showing Community Detection
