@@ -123,7 +123,7 @@ myLinkedList2.add(6)
 print "First Linked List is"
 myLinkedList1.display()
 
-print "Second Linked List is"
+print "Second Linked List  is"
 myLinkedList2.display()
 
 addSolution = Solution()
