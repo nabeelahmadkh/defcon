@@ -2,6 +2,7 @@ import networkx as nx
 import matplotlib.pyplot as plt
 import numpy as np
 import random
+import community
 
 #myarray = np.fromfile('zachary.dat',dtype=float)
 
@@ -89,6 +90,14 @@ print("communities are ",communities)
 print("labels are ",labels)
 nx.draw(G, node_color=[color_map[G.node[node]['community']] for node in G], with_labels=True)	#Settign the parameters for ER Graph
 #nx.draw_networkx_labels(G, pos)		# find out how to mark labels ????? IMPORTANT 
+plt.show()
+
+
+# Using Community Package for finding the Community
+part = community.best_partition(G)
+values = [part.get(node) for node in G.nodes()]
+
+nx.draw_spring(G, cmap = plt.get_cmap('jet'), node_color = values, with_labels=True)
 plt.show()
 
 
