@@ -15,7 +15,8 @@ class Solution(object):
 		length = len(outputString[len(outputString) - 1])
 		print("length ", length)
 		print("outputString is ",outputString)
-		return outputString[len(outputString) - 1]				
+		return outputString[len(outputString) - 1]		
+
 
 	def recursiveFind(self, prefix, listofwords, longest):
 		#print("prefix is ",prefix)
