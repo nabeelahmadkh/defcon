@@ -10,7 +10,7 @@ var options = {
 console.log("Going to make a request");
 
 http.get(options, function(response){
-	console.log(response.statuscode);
+	console.log(response.statusCode);
 	response.pipe(process.stdout);
 });
 

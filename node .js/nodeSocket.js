@@ -10,7 +10,7 @@ var handler = function(req, res){
 			console.log('__6__');
 			return res.end('error loading');
 		}else{
-			res.writeHead(200);function() {};
+			res.writeHead(200);
 			console.log('__7__');
 			res.end(data);
 		}
@@ -28,7 +28,7 @@ io.sockets.on('connection',function(socket){
 		console.log('emitted'+timeStamp);
 		socket.emit('timer',timeStamp);
 	},4000);
-	socket.on('submit',function(da`ta){
+	socket.on('submit',function(data){
 		console.log('submitted'+data);
 	});
 });
