@@ -94,7 +94,6 @@ ccoverall = ccoverall/erNodes
 print("Manually Calculated value of the cc of the graph ",ccoverall)
 
 
-
 # Manually Calculating the Diameter of the Graph.
 calcDiameter = erNodes * [0]
 for i in range(erNodes):
