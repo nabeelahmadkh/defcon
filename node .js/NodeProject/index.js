@@ -20,8 +20,10 @@ var postsRef = firebase.database().ref('blogPost');
 var app = express();
 
 var port = 8080;
+
+// Create a Router 
 var bookRouter = express.Router();
-bookRouter.route('/books')
+bookRouter.route('/books') // books route
 	.get(function(req,res){
 		//var responseJson = {hello: "Welcome to API"};
 		//res.json(responseJson);
@@ -31,6 +33,7 @@ bookRouter.route('/books')
 		
 		var query = req.query; // this will contain a query send from the browser.
 
+		// Firebase Function for getting the value and returning it in the response.
 		postsRef.on('value',function(snap){
 			// printing the data in the console retrieved from the Firebase
 			console.log('value',snap.val());
@@ -39,9 +42,10 @@ bookRouter.route('/books')
 			// printing the error in Firebase
 			console.log('Error!!!');
 			console.log(err)
-		});
+		});	
 	});
 
+// Creating a base routing path, you can see in the next block we are using /api as our base for the call 
 app.get('/', function(request, response){
 	response.send("hello");
 });
